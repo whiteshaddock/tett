@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <!-- 引入favicon -->
+    <link rel="shortcut icon" href="/asset/img/2.jpeg" />
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="test.css">
+
+    <!-- 引入阿里图标 -->
+    <link rel="stylesheet" href="asset/font_3945732_4i9fgrymm19/iconfont.css">
+    <!-- 引入echarts依赖包 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.1/echarts.js"></script>
+
+    <!-- 引入axios -->
+    <script crossorigin="anonymous" src="https://cdn.bootcdn.net/ajax/libs/axios/1.5.0/axios.js"></script>
+
+    <!-- 引入js文件 -->
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <!-- 头部容器 -->
+    <div class="Top-wrapper">
+        <!-- 头部 -->
+        <div class="Top">
+            <header>
+                <!-- 头部左侧跳转logo -->
+                <a href="javascript:;">LOGO</a>
+
+                <!--头部右侧  -->
+                <div class="header-right">
+                    <!-- 头部右侧阿里图标 -->
+                    <div class="icon">
+                        <i class="iconfont icon-shezhixitongshezhigongnengshezhishuxing"></i>
+                        <i class="iconfont icon-lingdang1"></i>
+                    </div>
+                    <!-- 头部右侧跳转logo -->
+                    <a href="javascript:;">LOG OUT</a>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <!-- 主体 -->
+    <main>
+        <!-- 主体顶部导航布局 -->
+        <nav>
+            <!-- 导航左侧 -->
+            <div class="nav-title">
+                <!-- 标题 -->
+                <h1>Audience Overview</h1>
+                <h3>Roseville CA</h3>
+            </div>
+
+            <!-- 导航右侧-->
+            <div class="nav-right">
+                <a href="javascript:;">DASSDRD</a>
+                <a href="javascript:;">AGSFGGD</a>
+                <a href="javascript:;">SGDSDGS</a>
+                <a href="javascript:;">HRTSF</a>
+                <a href="javascript:;">RNFGSD</a>
+                <!-- 滑动条 -->
+                <div id="move"></div>
+            </div>
+        </nav>
+
+        <!-- 主体中间 -->
+        <div class="main-top">
+            <!-- 左侧轮播图 -->
+            <div class="swiper">
+                <!-- 轮播图图片容器 -->
+                <div id="image">
+                    <img src="asset/img/x.jpeg">
+                    <img src="asset/img/2.jpeg">
+                    <img src="asset/img/3.jpeg">
+                    <img src="asset/img/4.jpeg">
+                    <img src="asset/img/5.jpeg">
+
+                </div>
+
+                <!-- 轮播图箭头 -->
+
+                <span id="arrow-left">&lt;</span>
+                <span id="arrow-right">&gt;</span>
+
+
+                <!-- 轮播图圆点容器 -->
+                <div id="drop">
+                    <div class="active"></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!--右侧数据容器  -->
+            <div class="data-wrapper">
+                <!-- 右侧数据 -->
+                <div class="data">
+                    <!-- 数据顶部 -->
+                    <div class="data-top">
+                        <!-- 标题 -->
+                        <h1>Support Requests</h1>
+                        <!-- 按钮 -->
+                        <button>View All</button>
+                    </div>
+
+                    <!-- 数据内容 -->
+                    <div class="data-content">
+                        <!-- 数据列 -->
+                        <div class="data-column">
+                            <!-- 标题 -->
+                            <div class="title">TIME</div>
+                            <!-- 内容 -->
+                            <div class="content">9.45pm</div>
+                            <div class="content">9.45pm</div>
+                        </div>
+                        <!-- 数据列 -->
+                        <div class="data-column">
+                            <div class="title">TIMEsgdsfs</div>
+                            <div class="content">hgdgpmsdf</div>
+                            <div class="content">fgspdfsdm</div>
+                        </div>
+                        <!-- 数据列 -->
+                        <div class="data-column">
+                            <div class="title">STATUS</div>
+                            <button>Solved</button>
+                            <button>Solved</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 主体顶部表格容器 -->
+
+        <div id="top-charts"></div>
+
+        <!-- 主体底部表格容器-->
+        <div class="bottom-charts-wrapper">
+            <div class="bottom-charts">
+                <!-- 主体底部表格容器 左侧 -->
+                <div id="bottom-left-charts"></div>
+
+                <!-- 主体底部表格容器 右侧 -->
+                <div id="bottom-right-charts"></div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- 底部容器 -->
+    <footer>
+        <!-- 底部 -->
+        <div class="footer-wrap">
+            <!--底部 左侧图标 -->
+            <a href="javascript:;">LOGO</a>
+            <!-- 右侧内容 -->
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div>gdsfg</div>
+                    <div>gdftfg</div>
+                    <div>gsgdssg</div>
+                    <div>hrtres</div>
+                </div>
+                <div class="footer-column">
+                    <div>gdsfg</div>
+                    <div>gdftfg</div>
+                    <div>gsgdssg</div>
+                    <div>hrtres</div>
+                </div>
+                <div class="footer-column">
+                    <div>gdsfg</div>
+                    <div>gdftfg</div>
+                    <div>gsgdssg</div>
+                    <div>hrtres</div>
+                </div>
+                <div class="footer-column">
+                    <div>gdsfg</div>
+                    <div>gdftfg</div>
+                    <div>gsgdssg</div>
+                    <div>hrtres</div>
+                </div>
+                <div class="footer-column">
+                    <div>gdsfg</div>
+                    <div>gdftfg</div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
